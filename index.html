@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>МІА · 8 років — Котобажання</title>
+<meta name="description" content="Вішліст подарунків на день народження Мії — 8 років.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-blobs" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+
+<header class="hero">
+  <div class="hero-mascot" aria-hidden="true">
+    <!-- Мила ілюстрація кота-єдинорога ("пушинокінь") — заглушка,
+         заміни на власну ілюстрацію, якщо є (assets/mascot.png/svg) -->
+    <svg viewBox="0 0 200 200" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="100" cy="120" rx="62" ry="54" fill="#cfd6e4"/>
+      <path d="M92 34 L100 6 L112 36 Z" fill="#f6b8d0"/>
+      <ellipse cx="70" cy="86" rx="16" ry="20" fill="#cfd6e4"/>
+      <ellipse cx="130" cy="86" rx="16" ry="20" fill="#cfd6e4"/>
+      <ellipse cx="70" cy="88" rx="8" ry="11" fill="#f6b8d0"/>
+      <ellipse cx="130" cy="88" rx="8" ry="11" fill="#f6b8d0"/>
+      <circle cx="80" cy="118" r="7" fill="#2c2a35"/>
+      <circle cx="120" cy="118" r="7" fill="#2c2a35"/>
+      <ellipse cx="100" cy="134" rx="6" ry="4" fill="#2c2a35"/>
+      <path d="M60 150 Q100 172 140 150" stroke="#2c2a35" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M158 130 Q186 118 190 92 Q170 104 156 118 Z" fill="url(#rainbow)"/>
+      <defs>
+        <linearGradient id="rainbow" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#ffb3c1"/>
+          <stop offset="0.5" stop-color="#ffe29a"/>
+          <stop offset="1" stop-color="#a7d8ff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <p class="hero-kicker">День народження ✨</p>
+  <h1 class="hero-title">МІА<span class="hero-title-age">8 РОКІВ</span></h1>
+  <p class="hero-sub">Список бажань до дня народження — обери подарунок і натисни «Забронювати», щоб інші бачили, що він вже зайнятий.</p>
+</header>
+
+<main class="wrap">
+  <h2 class="section-title">
+    <span class="paw" aria-hidden="true">🐾</span> Котобажання
+  </h2>
+  <p class="section-hint">Тут зібрані речі, яким Мія дуже зрадіє — від книжок про Пушина до дрібничок для творчості.</p>
+
+  <ul class="gift-grid" id="giftGrid">
+    <!-- Картки генеруються з script.js (масив ITEMS) -->
+  </ul>
+
+  <p class="thanks-note">Дякуємо, що завітали 💛 Кожна дрібниця — це турбота, і ми це дуже цінуємо.</p>
+</main>
+
+<footer class="footer">
+  <span>Зроблено з любов'ю для Мії</span>
+</footer>
+
+<!-- Прихований iframe для "тихої" відправки Google Форми без переходу зі сторінки -->
+<iframe name="hidden_form_target" id="hidden_form_target" style="display:none"></iframe>
+
+<script src="script.js"></script>
+</body>
+</html>
