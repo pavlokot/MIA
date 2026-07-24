@@ -26,7 +26,7 @@ const ITEMS = [
   { id: "item-02", name: "Набір для створення браслетів Juicy Couture", note: "Make It Real, MR4439", photo: "assets/photos/bracelets.jpg", storeUrl: "https://antoshka.ua/uk/nabir-dlja-stvorennja-brasletiv-make-it-real-juicy-couture-mr4439.html" },
   { id: "item-03", name: "Глобус з підсвічуванням Day&Night", note: "Tecnodidattica, 25 см", photo: "assets/photos/globe.jpg", storeUrl: "https://antoshka.ua/uk/globus-tecnodidattica-day-night-z-pidsvichuvannjam-25-sm-ukr-0325gnnduclbb046.html" },
   { id: "item-04", name: "Набір-сюрприз Cutie Pops", note: "3 шт", photo: "assets/photos/cutiepops.jpg", storeUrl: "https://bi.ua/ukr/product/nabr-syurpriz-eolo-cutie-pops-3-sht-8411936726759.html" },
-  { id: "item-05", name: "Сквіш-сюрприз Tiki Wiki «Тікі Дамплінг»", note: "Гігантський — продається в острівці біля BB Club", photo: "assets/photos/tikiwiki.jpg", storeUrl: "https://antoshka.ua/uk/skvish-sjurpriz-tiki-wiki-tiki-dampling-jc-bs0506.html" },
+  { id: "item-05", name: "Сквіш-сюрприз Tiki Wiki «Тікі Дамплінг»", note: "Гігантський — продається в острівці біля BB Club", photo: "assets/photos/tikiwiki.jpg", storeUrl: "" },
   { id: "item-06", name: "Канцелярія на ваш вибір", note: "Будь-які канцелярські дрібнички — олівці, ручки, стікери тощо", photo: "assets/placeholder.svg", storeUrl: "" },
 ];
 
