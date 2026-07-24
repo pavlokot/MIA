@@ -20,18 +20,14 @@ const CONFIG = {
   SHEET_CSV_URL: "",
 };
 
-// ---- СПИСОК ПОДАРУНКІВ (плейсхолдери — заміни на реальні) ----------------
+// ---- СПИСОК ПОДАРУНКІВ -----------------------------------------------------
 const ITEMS = [
-  { id: "item-01", name: "Книга «Пушин» — том 1", note: "Перша книга серії", photo: "assets/placeholder.svg", storeUrl: "#" },
-  { id: "item-02", name: "Книга «Пушин» — том 2", note: "Продовження історій", photo: "assets/placeholder.svg", storeUrl: "#" },
-  { id: "item-03", name: "М'яка іграшка-кіт", note: "Великий розмір", photo: "assets/placeholder.svg", storeUrl: "#" },
-  { id: "item-04", name: "Набір для малювання", note: "Кольорові олівці + скетчбук", photo: "assets/placeholder.svg", storeUrl: "#" },
-  { id: "item-05", name: "Пазл 500 елементів", note: "Тема — котики", photo: "assets/placeholder.svg", storeUrl: "#" },
-  { id: "item-06", name: "Настільна гра", note: "Для всієї родини", photo: "assets/placeholder.svg", storeUrl: "#" },
-  { id: "item-07", name: "Рюкзак", note: "Для школи", photo: "assets/placeholder.svg", storeUrl: "#" },
-  { id: "item-08", name: "Набір для творчості", note: "Бісероплетіння", photo: "assets/placeholder.svg", storeUrl: "#" },
-  { id: "item-09", name: "Плед", note: "М'який, з візерунком", photo: "assets/placeholder.svg", storeUrl: "#" },
-  { id: "item-10", name: "Сертифікат у книгарню", note: "Щоб обрати самій", photo: "assets/placeholder.svg", storeUrl: "#" },
+  { id: "item-01", name: "Блокнот з трафаретами «Рожева мрія»", note: "Make It Real, MR3203", photo: "assets/photos/sketchbook.jpg", storeUrl: "https://antoshka.ua/uk/bloknot-z-trafaretami-make-it-real-rozheva-mrija-mr3203.html" },
+  { id: "item-02", name: "Набір для створення браслетів Juicy Couture", note: "Make It Real, MR4439", photo: "assets/photos/bracelets.jpg", storeUrl: "https://antoshka.ua/uk/nabir-dlja-stvorennja-brasletiv-make-it-real-juicy-couture-mr4439.html" },
+  { id: "item-03", name: "Глобус з підсвічуванням Day&Night", note: "Tecnodidattica, 25 см", photo: "assets/photos/globe.jpg", storeUrl: "https://antoshka.ua/uk/globus-tecnodidattica-day-night-z-pidsvichuvannjam-25-sm-ukr-0325gnnduclbb046.html" },
+  { id: "item-04", name: "Набір-сюрприз Cutie Pops", note: "3 шт", photo: "assets/photos/cutiepops.jpg", storeUrl: "https://bi.ua/ukr/product/nabr-syurpriz-eolo-cutie-pops-3-sht-8411936726759.html" },
+  { id: "item-05", name: "Сквіш-сюрприз Tiki Wiki «Тікі Дамплінг»", note: "Гігантський — продається в острівці біля BB Club", photo: "assets/photos/tikiwiki.jpg", storeUrl: "https://antoshka.ua/uk/skvish-sjurpriz-tiki-wiki-tiki-dampling-jc-bs0506.html" },
+  { id: "item-06", name: "Канцелярія на ваш вибір", note: "Будь-які канцелярські дрібнички — олівці, ручки, стікери тощо", photo: "assets/placeholder.svg", storeUrl: "" },
 ];
 
 // ---------------------------------------------------------------------------
@@ -64,15 +60,23 @@ function renderItems(reservedIds) {
     li.className = "gift-card" + (isReserved ? " is-reserved" : "");
     li.dataset.itemId = item.id;
 
+    const hasStore = Boolean(item.storeUrl);
+    const nameHtml = hasStore
+      ? `<a class="gift-name" href="${item.storeUrl}" target="_blank" rel="noopener">${item.name}</a>`
+      : `<span class="gift-name">${item.name}</span>`;
+    const storeBtnHtml = hasStore
+      ? `<a class="btn btn-store" href="${item.storeUrl}" target="_blank" rel="noopener">🛍️ У магазин</a>`
+      : "";
+
     li.innerHTML = `
       <div class="gift-photo">
         <img src="${item.photo}" alt="${item.name}" loading="lazy">
       </div>
       <div class="gift-body">
-        <a class="gift-name" href="${item.storeUrl}" target="_blank" rel="noopener">${item.name}</a>
+        ${nameHtml}
         ${item.note ? `<p class="gift-note">${item.note}</p>` : ""}
         <div class="gift-actions">
-          <a class="btn btn-store" href="${item.storeUrl}" target="_blank" rel="noopener">🛍️ У магазин</a>
+          ${storeBtnHtml}
           <button type="button" class="btn btn-reserve" data-action="reserve">🎁 Забронювати</button>
           <span class="gift-tag-reserved">🎁 Вже заброньовано</span>
         </div>
