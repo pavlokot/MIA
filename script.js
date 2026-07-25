@@ -8,16 +8,9 @@
 // Заповнюється після того, як створиш Форму й опублікуєш Таблицю.
 // Покрокова інструкція — у README.md.
 const CONFIG = {
-  // Посилання на відправку Google Форми, напр.:
-  // "https://docs.google.com/forms/d/e/XXXXXXXXXXXXXXXX/formResponse"
-  FORM_ACTION_URL: "",
-
-  // ID поля Форми, куди пишемо ідентифікатор подарунка (item.id), напр. "entry.123456789"
-  FORM_ITEM_ENTRY: "",
-
-  // Посилання на опубліковану Таблицю у форматі CSV (gviz-ендпоінт), напр.:
-  // "https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXX/gviz/tq?tqx=out:csv&sheet=Form Responses 1"
-  SHEET_CSV_URL: "",
+  FORM_ACTION_URL: "https://docs.google.com/forms/d/e/1FAIpQLSdJAnRnJsDYYE-A4vHXmsRbW192iPO1v9fc56YHfKWHwsi3kw/formResponse",
+  FORM_ITEM_ENTRY: "entry.1741683362",
+  SHEET_CSV_URL: "https://docs.google.com/spreadsheets/d/18YqAipLhW5J6xYj7l0OCOnsP3QnLw2qEenTUtYACfjc/gviz/tq?tqx=out:csv&sheet=Form Responses 1",
 };
 
 // ---- СПИСОК ПОДАРУНКІВ -----------------------------------------------------
