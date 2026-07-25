@@ -28,6 +28,11 @@ const ITEMS = [
   { id: "item-04", name: "Набір-сюрприз Cutie Pops", note: "3 шт", photo: "assets/photos/cutiepops.jpg", storeUrl: "https://bi.ua/ukr/product/nabr-syurpriz-eolo-cutie-pops-3-sht-8411936726759.html" },
   { id: "item-05", name: "Сквіш-сюрприз Tiki Wiki «Тікі Дамплінг»", note: "Гігантський — продається в острівці біля BB Club", photo: "assets/photos/tikiwiki.jpg", storeUrl: "" },
   { id: "item-06", name: "Канцелярія на ваш вибір", note: "Будь-які канцелярські дрібнички — олівці, ручки, стікери тощо", photo: "assets/photos/stationery.jpg", storeUrl: "" },
+  { id: "item-07", name: "Сумка-гаманець Nebulous Stars «Стелла»", note: "", photo: "assets/photos/bag.jpg", storeUrl: "https://antoshka.ua/uk/sumka-gamanec-nebulous-stars-stella.html" },
+  { id: "item-08", name: "LEGO Friends Ляльковий будиночок-валіза", note: "Для творчої гри, 42697", photo: "assets/photos/legohouse.jpg", storeUrl: "https://antoshka.ua/uk/lego-friends-ljal-kovij-budinochok-valiza-dlja-tvorchoi-gri-42697.html" },
+  { id: "item-09", name: "Набір Canal Toys Hair'iffic «Зроби зачіску Піксі»", note: "DIY Airbrush Plush", photo: "assets/photos/airbrush.jpg", storeUrl: "https://antoshka.ua/uk/nabir-canal-toys-diy-airbrush-plush-hair-iffic-zrobi-zachisku-piksi.html" },
+  { id: "item-10", name: "Плакат «Політична карта світу»", note: "Українською, 106×156 см", photo: "assets/photos/poster.jpg", storeUrl: "https://geekposters.com.ua/ua/p1651035748-plakat-politicheskaya-karta.html" },
+  { id: "item-11", name: "Іграшка для собаки Pet Fun «Бобріна Латина»", note: "40 см, коричневий", photo: "assets/photos/beaver.jpg", storeUrl: "https://masterzoo.ua/ua/catalog/sobaki/grashki-dlya-sobak/pet-fun/pet-fun-bobryna-latyna-yhrushka-dlia-sobak-40-sm-korychnevyi/" },
 ];
 
 // ---------------------------------------------------------------------------
