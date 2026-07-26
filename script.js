@@ -26,6 +26,7 @@ const ITEMS = [
   { id: "item-09", name: "Набір Canal Toys Hair'iffic «Зроби зачіску Піксі»", note: "DIY Airbrush Plush", photo: "assets/photos/airbrush.jpg", storeUrl: "https://antoshka.ua/uk/nabir-canal-toys-diy-airbrush-plush-hair-iffic-zrobi-zachisku-piksi.html" },
   { id: "item-10", name: "Плакат «Політична карта світу»", note: "Українською, 106×156 см", photo: "assets/photos/poster.jpg", storeUrl: "https://geekposters.com.ua/ua/p1651035748-plakat-politicheskaya-karta.html" },
   { id: "item-11", name: "Іграшка для собаки Pet Fun «Бобріна Латина»", note: "40 см, коричневий", photo: "assets/photos/beaver.jpg", storeUrl: "https://masterzoo.ua/ua/catalog/sobaki/grashki-dlya-sobak/pet-fun/pet-fun-bobryna-latyna-yhrushka-dlia-sobak-40-sm-korychnevyi/" },
+  { id: "item-12", name: "Ігровий набір Washlings «Магічне прання»", note: "", photo: "assets/photos/washlings.jpg", storeUrl: "https://bi.ua/ukr/product/groviy-nabr-washlings-magchne-prannya-2409011.html" },
 ];
 
 // ---------------------------------------------------------------------------
